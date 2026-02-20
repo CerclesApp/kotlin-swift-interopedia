@@ -18,7 +18,7 @@ Both sample projects are Kotlin Multiplatform (KMP) projects with an iOS app. Th
 **Build the shared Kotlin framework** (run from within the respective project directory):
 ```sh
 cd kotlin-swift-interopedia-samples
-./gradlew :shared:assembleDebugXCFramework
+./gradlew :shared:embedAndSignAppleFrameworkForXcode
 # or for iOS simulator
 ./gradlew :shared:iosSimulatorArm64Binaries
 ```
