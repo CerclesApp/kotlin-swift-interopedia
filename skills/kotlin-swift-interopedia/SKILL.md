@@ -1,12 +1,11 @@
 ---
-name: kotlin-swift-interop
+name: kotlin-swift-interopedia
 description: >
   Reference guide for Kotlin-Swift interoperability via the Kotlin/Native
   Objective-C bridge. Use when working on KMP projects with an iOS target,
   or when questions involve Kotlin, Swift, KMP, iOS interop, SKIE, or
   KMP-NativeCoroutines. Covers all 63 documented features with support
   levels, type mappings, and workaround patterns.
-user_invocable: true
 triggers:
   - kotlin swift interop
   - KMP iOS
@@ -17,9 +16,9 @@ triggers:
   - kotlin objective-c
 ---
 
-# Kotlin-Swift Interop Reference
+# Kotlin-Swift Interopedia Reference
 
-## How Interop Works
+## How Interopedia Works
 
 Kotlin is **not directly interoperable with Swift**. Instead:
 
@@ -140,72 +139,6 @@ The Kotlin/Native compiler generates Objective-C headers that Swift imports via 
 | Reified functions | ❌ | Crashes at runtime: "unsupported call of reified inlined function" |
 | Star projection | 🐛 | Use `MyGeneric<AnyObject>` with type cast |
 | Generic interfaces | ❌ | Generic type info lost in .h |
-
-## Documentation Index
-
-| Category | Feature | Doc Path |
-|----------|---------|----------|
-| Overview | Classes and functions | `../../docs/overview/Classes and functions.md` |
-| Overview | Top-level functions | `../../docs/overview/Top-level functions.md` |
-| Overview | Types | `../../docs/overview/Types.md` |
-| Overview | Collections | `../../docs/overview/Collections.md` |
-| Overview | Exceptions | `../../docs/overview/Exceptions.md` |
-| Overview | Public API | `../../docs/overview/PublicAPI.md` |
-| Overview | @ObjCName | `../../docs/overview/ObjCName.md` |
-| Overview | @HiddenFromObjC | `../../docs/overview/HiddenFromObjC.md` |
-| Overview | @ShouldRefineInSwift | `../../docs/overview/ShouldRefineInSwift.md` |
-| Overview | KDoc comments | `../../docs/overview/KDocComments.md` |
-| Functions | Member functions | `../../docs/functionsandproperties/Member functions.md` |
-| Functions | Constructors | `../../docs/functionsandproperties/Constructors.md` |
-| Functions | Read-only member properties | `../../docs/functionsandproperties/Read-only member properties.md` |
-| Functions | Mutable member properties | `../../docs/functionsandproperties/Mutable member properties.md` |
-| Functions | Top-level val properties | `../../docs/functionsandproperties/Top-level val properties.md` |
-| Functions | Top-level var properties | `../../docs/functionsandproperties/Top-level mutable var properties.md` |
-| Functions | Lambda arguments | `../../docs/functionsandproperties/Functions expecting lambda arguments.md` |
-| Functions | Returning function type | `../../docs/functionsandproperties/Functions returning function type.md` |
-| More Functions | Overloads | `../../docs/moreaboutfunctions/Functions with overloads.md` |
-| More Functions | Default arguments | `../../docs/moreaboutfunctions/Functions with default arguments.md` |
-| More Functions | Constructor defaults | `../../docs/moreaboutfunctions/Constructors with default arguments.md` |
-| More Functions | Lambda with receiver | `../../docs/moreaboutfunctions/Functions expecting lambda with receiver.md` |
-| More Functions | Functions with receivers | `../../docs/moreaboutfunctions/Functions with receivers.md` |
-| More Functions | Value class parameter | `../../docs/moreaboutfunctions/Functions with value class parameter.md` |
-| More Functions | Vararg parameter | `../../docs/moreaboutfunctions/Functions with vararg parameter.md` |
-| More Functions | Inline functions | `../../docs/moreaboutfunctions/Inline functions.md` |
-| Types | Basic types | `../../docs/types/Basic types.md` |
-| Types | Optional basic types | `../../docs/types/Optional basic types.md` |
-| Types | Collections with custom types | `../../docs/types/Collections with custom types.md` |
-| Types | Collections with basic types | `../../docs/types/Collections with basic types.md` |
-| Types | Mutable/immutable collections | `../../docs/types/Mutable, immutable collections.md` |
-| Types | Unit and Nothing | `../../docs/types/Unit and Nothing.md` |
-| Classes | Abstract classes | `../../docs/classesandinterfaces/Abstract classes.md` |
-| Classes | Annotation classes | `../../docs/classesandinterfaces/Annotation classes.md` |
-| Classes | Data classes | `../../docs/classesandinterfaces/Data classes.md` |
-| Classes | Enum classes | `../../docs/classesandinterfaces/Enum classes.md` |
-| Classes | Fun interfaces | `../../docs/classesandinterfaces/Fun interfaces.md` |
-| Classes | Inline classes | `../../docs/classesandinterfaces/Inline classes.md` |
-| Classes | Inner classes | `../../docs/classesandinterfaces/Inner classes.md` |
-| Classes | Interfaces | `../../docs/classesandinterfaces/Interfaces.md` |
-| Classes | Objects | `../../docs/classesandinterfaces/Objects.md` |
-| Classes | Companion objects | `../../docs/classesandinterfaces/Companion objects.md` |
-| Classes | Open classes | `../../docs/classesandinterfaces/Open classes.md` |
-| Classes | Sealed classes | `../../docs/classesandinterfaces/Sealed classes.md` |
-| Classes | Sealed interfaces | `../../docs/classesandinterfaces/Sealed interfaces.md` |
-| Coroutines | Suspend functions | `../../docs/coroutines/Suspend functions.md` |
-| Coroutines | Flows | `../../docs/coroutines/Flows.md` |
-| Extensions | Ext func over usual class | `../../docs/extensions/Extension functions over usual class.md` |
-| Extensions | Ext func over platform class | `../../docs/extensions/Extension functions over platform class.md` |
-| Extensions | Ext prop over usual class | `../../docs/extensions/Extension properties over usual class.md` |
-| Extensions | Ext prop over platform class | `../../docs/extensions/Extension properties over platform class.md` |
-| Extensions | Ext prop companion usual class | `../../docs/extensions/Extension properties for companion object of usual class.md` |
-| Extensions | Ext prop companion platform class | `../../docs/extensions/Extension properties for companion object of platform class.md` |
-| Generics | Generic classes | `../../docs/generics/Generic classes.md` |
-| Generics | Generic functions | `../../docs/generics/Generic functions.md` |
-| Generics | Bounded generics | `../../docs/generics/Bounded generics.md` |
-| Generics | Contravariant generics | `../../docs/generics/Contravariant generics.md` |
-| Generics | Covariant generics | `../../docs/generics/Covariant generics.md` |
-| Generics | Reified functions | `../../docs/generics/Reified functions.md` |
-| Generics | Star projection | `../../docs/generics/Star projection.md` |
-| Generics | Generic interfaces | `../../docs/generics/Generic interfaces.md` |
 
 ## Category Quick Reference
 
