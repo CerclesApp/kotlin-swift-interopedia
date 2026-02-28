@@ -1,4 +1,4 @@
-rootProject.name = "kotlin-swift-interopedia-samples"
+rootProject.name = "kotlin-swift-interopedia-samples-skie"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
@@ -18,5 +18,4 @@ dependencyResolutionManagement {
     }
 }
 
-include(":composeApp")
 include(":shared")

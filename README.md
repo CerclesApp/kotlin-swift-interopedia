@@ -135,6 +135,30 @@ You can edit the code, rerun the app, and see how the output has changed.
   <tr><td><a href="/docs/generics/Generic%20interfaces.md">Generic interfaces</a></td><td>Generic interfaces are not supported.</td></tr>  
 </table>
 
+## Claude Code Skill
+
+This repository includes a [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skill that gives Claude instant access to all 61 documented interop features, including support levels, type mappings, and workaround patterns.
+
+### Installation
+
+Point Claude Code at this repository as a plugin directory:
+
+```sh
+claude --plugin-dir /path/to/kotlin-swift-interopedia
+```
+
+Or add it permanently in your project's `.claude/settings.json`:
+
+```json
+{
+  "pluginDirs": ["/path/to/kotlin-swift-interopedia"]
+}
+```
+
+### Usage
+
+Once the plugin is loaded, Claude will automatically use the skill when your questions mention Kotlin, Swift, KMP, iOS interop, SKIE, or KMP-NativeCoroutines. No special command is needed — just ask your question and Claude will consult the interopedia reference.
+
 ## Feature Support Refresher
 
 ### Some features work exactly as expected

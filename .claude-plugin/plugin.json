@@ -1,0 +1,22 @@
+{
+  "name": "kotlin-swift-interopedia",
+  "version": "1.0.0",
+  "description": "Reference skill for Kotlin-Swift interoperability via the Kotlin/Native Objective-C bridge. Covers all 61 documented features with support levels, type mappings, and workaround patterns for KMP iOS projects.",
+  "author": {
+    "name": "HeadHunter"
+  },
+  "homepage": "https://github.com/CerclesApp/kotlin-swift-interopedia",
+  "repository": "https://github.com/CerclesApp/kotlin-swift-interopedia",
+  "license": "MIT",
+  "keywords": [
+    "kotlin",
+    "swift",
+    "kmp",
+    "kotlin-multiplatform",
+    "ios",
+    "objective-c",
+    "skie",
+    "kmp-native-coroutines",
+    "interop"
+  ]
+}
