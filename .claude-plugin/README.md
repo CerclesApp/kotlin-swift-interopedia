@@ -1,14 +1,14 @@
 # kotlin-swift-interopedia Claude Plugin
 
-A Claude Code plugin that provides a reference skill for **Kotlin-Swift interoperability** via the Kotlin/Native Objective-C bridge. Use it in any KMP project with an iOS target to get instant, accurate guidance on all 63 documented interop features.
+A Claude Code plugin that provides a reference skill for **Kotlin-Swift interoperability** via the Kotlin/Native Objective-C bridge. Use it in any KMP project with an iOS target to get instant, accurate guidance on all 61 documented interop features.
 
 ## What It Does
 
 When you invoke the skill, Claude has access to:
 
-- **Feature Support Matrix** — quick lookup of support levels (✅ ⚠️ 🔧 🐛 ❌) for all 63 features
+- **Feature Support Matrix** — quick lookup of support levels (✅ ⚠️ 🔧 🐛 ❌) for all 61 features
 - **7 condensed reference files** — code-heavy summaries organized by category
-- **63 full documentation articles** — complete explanations with all edge cases
+- **61 full documentation articles** — complete explanations with all edge cases
 
 ## Installation
 
@@ -26,11 +26,9 @@ Or add it to your project's `.claude/settings.json`:
 
 ## Skill Invocation
 
-Once the plugin is loaded, invoke the skill with:
+Once the plugin is loaded, Claude will automatically use the skill when you mention Kotlin, Swift, KMP, iOS interop, SKIE, or KMP-NativeCoroutines. It is triggered by keywords in your questions — no special command is needed.
 
-Ask a question — Claude will automatically use the skill when you mention Kotlin, Swift, KMP, iOS interop, SKIE, or KMP-NativeCoroutines.
-
-## Categories Covered (63 features)
+## Categories Covered (61 features)
 
 | Category | Features |
 |----------|----------|
@@ -57,4 +55,4 @@ Ask a question — Claude will automatically use the skill when you mention Kotl
 
 ## Source Repository
 
-[github.com/kotlin-hands-on/kotlin-swift-interopedia](https://github.com/kotlin-hands-on/kotlin-swift-interopedia)
+[github.com/CerclesApp/kotlin-swift-interopedia](https://github.com/CerclesApp/kotlin-swift-interopedia)

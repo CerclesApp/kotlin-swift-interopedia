@@ -28,7 +28,7 @@ cd kotlin-swift-interopedia-samples
 open kotlin-swift-interopedia-samples/iosApp/iosApp.xcodeproj
 ```
 
-The iOS app must be built through Xcode after the shared framework is assembled. There is no Android app module — the `composeApp` subproject referenced in `settings.gradle.kts` provides Android support.
+The iOS app must be built through Xcode after the shared framework is assembled.
 
 ## Project Architecture
 
@@ -40,12 +40,12 @@ The iOS app must be built through Xcode after the shared framework is assembled.
 - Opts into experimental annotations: `kotlin.experimental.ExperimentalObjCName` and `kotlin.experimental.ExperimentalObjCRefinement` across all source sets
 
 ### Standard Sample (`kotlin-swift-interopedia-samples/`)
-- Uses **KMP-NativeCoroutines** (v1.0.0-ALPHA-21) for improved suspend function / Flow interop from Swift
+- Uses **KMP-NativeCoroutines** (v1.0.1) for improved suspend function / Flow interop from Swift
 - Uses **KSP** for annotation processing
 - `-Xexport-kdoc` compiler flag is set so KDoc comments appear in Xcode
 
 ### SKIE Sample (`kotlin-swift-interopedia-samples-skie/`)
-- Uses **SKIE** (v0.5.6) plugin (`co.touchlab.skie`) instead of KMP-NativeCoroutines
+- Uses **SKIE** (v0.10.10) plugin (`co.touchlab.skie`) instead of KMP-NativeCoroutines
 - Only contains Kotlin/Swift examples for features SKIE improves: enum classes, sealed classes, sealed interfaces, suspend functions, flows, and default arguments
 - Adds `skieConfigAnnotations` as a dependency for SKIE configuration annotations
 

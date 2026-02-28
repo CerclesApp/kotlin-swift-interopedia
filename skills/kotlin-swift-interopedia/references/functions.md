@@ -164,7 +164,7 @@ class ConstructorWithDefaultArgumentsClass(
 ```
 ```swift
 // All params required
- ConstructorWithDefaultArgumentsClass(param1: "123", param2: 500, param3: false)
+ConstructorWithDefaultArgumentsClass(param1: "123", param2: 500, param3: false)
 ```
 
 ## Functions Expecting Lambda with Receiver

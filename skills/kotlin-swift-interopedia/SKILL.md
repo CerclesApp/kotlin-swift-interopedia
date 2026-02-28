@@ -4,7 +4,7 @@ description: >
   Reference guide for Kotlin-Swift interoperability via the Kotlin/Native
   Objective-C bridge. Use when working on KMP projects with an iOS target,
   or when questions involve Kotlin, Swift, KMP, iOS interop, SKIE, or
-  KMP-NativeCoroutines. Covers all 63 documented features with support
+  KMP-NativeCoroutines. Covers all 61 documented features with support
   levels, type mappings, and workaround patterns.
 triggers:
   - kotlin swift interop

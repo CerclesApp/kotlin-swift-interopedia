@@ -143,7 +143,9 @@ extension Person {
 Enable with compiler flag in `build.gradle.kts`:
 ```kotlin
 targets.withType<KotlinNativeTarget> {
-    compilations["main"].kotlinOptions.freeCompilerArgs += "-Xexport-kdoc"
+    compilations["main"].compilerOptions.configure {
+        freeCompilerArgs.add("-Xexport-kdoc")
+    }
 }
 ```
 - In Xcode: Option+Double-click to see docs
